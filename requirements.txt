@@ -1,0 +1,11 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+Flask==2.0.1
+Flask-CORS==3.0.10
+SQLAlchemy==1.4.22
+Pydantic==1.8.2
+azure-functions==1.7.0
+Werkzeug==2.0.1
