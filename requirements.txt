@@ -7,5 +7,5 @@ Flask==2.0.1
 Flask-CORS==3.0.10
 SQLAlchemy==1.4.22
 Pydantic==1.8.2
-azure-functions==1.7.0
 Werkzeug==2.0.1
+pytest==6.2.4
