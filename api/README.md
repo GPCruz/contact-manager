@@ -6,21 +6,32 @@ Este projeto é uma API desenvolvida com Flask e SQLAlchemy, utilizando boas pr�
 
 ## Estrutura do Projeto
 
-__init__.py
-config.py
-db/
-    abstractions/
-        base.py
-    db_driver.py
-    models/
-        contact_model.py
-    schemas/
-        contact_schema.py
-routes.py
-services/
-    user_service.py
-controller.py
-
+root/
+│
+├── controllers/
+│   └── user_controller.py
+├── db/
+│   ├── abstractions/
+│   │   └── base.py
+│   ├── models/
+│   │   ├── contact_model.py
+│   │   └── user_model.py
+│   ├── schemas/
+│   └── db_driver.py
+├── services/
+│   └── user_service.py
+├── tests/
+│   └── test_user_service.py
+├── __init__.py/
+├── .funcignore/
+├── .gitignore/
+├── config.py/
+├── db.sqlite3/
+├── function_app.py/
+├── host.json/
+├── README.md/
+├── requirements.txt/
+└── routes.py
 
 ## Requisitos
 
