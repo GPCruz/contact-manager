@@ -1,9 +1,10 @@
+import logging
 import azure.functions as func
 from flask import Flask
 
 from flask_cors import CORS
-from .config import Config
-from .routes import main_bp
+from api.config import Config
+from api.routes import main_bp
 
 
 app = Flask(__name__)
@@ -20,4 +21,5 @@ def add_header(response):
     return response
 
 if __name__ == '__main__':
+    logging.info('Starting Flask app')
     app.run(debug=Config.DEBUG)

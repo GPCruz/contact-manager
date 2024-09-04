@@ -1,6 +1,6 @@
 from sqlalchemy import Column, DateTime, Float, Integer, Interval, String, Text
 
-from db.abstractions.base import Base
+from api.db.abstractions.base import Base
 
 
 

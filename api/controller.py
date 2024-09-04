@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from services.user_service import UserService
+from api.services.user_service import UserService
 
 user_service = UserService()
 
