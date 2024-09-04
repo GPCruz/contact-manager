@@ -3,6 +3,12 @@ from flask import jsonify, request
 from services.user_service import UserService
 
 
+def handle_create_user():
+    username = request.headers.get('username')
+    password = request.headers.get('password')
+    UserService.create_user(username = username, password = password)
+    return 'User created', 201
+
 def create_user():
     data = request.get_json()
     user_service = UserService()
