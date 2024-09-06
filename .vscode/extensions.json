@@ -1,6 +1,21 @@
 {
   "recommendations": [
+    "ms-python.autopep8",
+    "ms-vscode.azurecli",
+    "ms-azuretools.azure-dev",
     "ms-azuretools.vscode-azurefunctions",
-    "ms-python.python"
+    "ms-python.pylint",
+    "njpwerner.autodocstring",
+    "mgesbert.python-path",
+    "kevinrose.vsc-python-indent",
+    "donjayamanne.python-extension-pack",
+    "ms-python.vscode-pylance",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.isort",
+    "github.copilot-chat",
+    "github.copilot",
+    "mhutchie.git-graph"
   ]
 }
