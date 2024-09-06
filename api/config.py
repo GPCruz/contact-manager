@@ -1,9 +1,12 @@
+import os
+
 
 class Config:
-    
-    DEBUG = True
+
+    DEBUG = os.environ.get('DEBUG', False)
     # Database
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite3'
+    SQLALCHEMY_DATABASE_URI = os.environ.get(f'SQLALCHEMY_DATABASE_URI')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Security
+    SECRET_KEY = os.environ.get('SECRET_KEY')

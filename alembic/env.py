@@ -8,8 +8,8 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from db.models.user_model import User
-from db.abstractions.base import Base
+from api.db.models.user_model import User
+from api.db.abstractions.base import Base
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

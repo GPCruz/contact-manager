@@ -15,7 +15,5 @@ def hello():
 def register():
     return handle_create_user()
 
-# @main_bp.route('/login', methods=['POST'])
-# def login():
-#     return handle_request('login')
-
+@main_bp.route('/login', methods=['GET'])
+    return handle_login()
